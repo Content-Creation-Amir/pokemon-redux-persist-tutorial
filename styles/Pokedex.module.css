@@ -1,0 +1,76 @@
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.pokemonChosen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  padding: 0.5rem;
+  cursor: pointer;
+  background: rgb(186, 248, 186);
+  border-radius: 5px;
+}
+.pokemonChosen:hover {
+  background-color: rgb(252, 162, 162);
+}
+
+.pokemon:hover {
+  background-color: rgb(197, 193, 193);
+  border-radius: 5px;
+}
+
+.pokemonName {
+  font-size: medium;
+}
+
+.pokedex {
+  display: grid;
+  grid-template-columns: repeat(16, minmax(0, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+  border: solid rgb(190, 190, 190) 1px;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.pokedex::-webkit-scrollbar {
+  display: none;
+}
+
+.pokedexWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pokedexTitle {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+  .pokedex {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .pokedex {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
