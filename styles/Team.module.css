@@ -1,0 +1,49 @@
+.teamContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.teamListing {
+  display: flex;
+  gap: 1rem;
+}
+
+.pokemonName {
+  font-size: large;
+}
+
+.pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.emptyMessage {
+  font-style: italic;
+  font-size: large;
+  font-weight: normal;
+}
+
+.teamWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.clearButton {
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: rgb(221, 127, 127);
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
+}
